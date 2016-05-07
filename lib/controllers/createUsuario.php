@@ -1,6 +1,6 @@
 <?php
 
-include "../model/usuario.php";
+include  "../model/usuario.php";
 
 $idUsuario = $_POST["crear-idUsuario"];
 $cedula = $_POST["crear-cedula"];
@@ -17,7 +17,7 @@ $respuesta = $usuario->createUsuario();
 if ($respuesta == "exito") {
     echo "El usuario se ha registrado con exito";
 } else {
-    echo "Error al registrar el usuario";
+    echo "Se ha prodicido un error al registrar el usuario";
 }
 
 ?>
